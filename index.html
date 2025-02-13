@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+
+                <div class="letter">
+                    <div class="text">
+                        <strong>Happy Valentine's Day</strong>
+
+                        <div class="text2">
+                            <br> My Dear Husband, you’ve been my safe place and biggest supporter. Thank you for loving me just as I am and for filling my life with warmth, laughter, and memories. You make every day feel special, and I’m so grateful to
+                            be by your side.
+                            <br>I love you till death do us part.
+                            <br><br>With love, Natalia
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class=" heart "></div>
+        </div>
+    </div>
+
+    <div class="music-container">
+        <h3>Spin You Around - Morgan Wallen</h3>
+
+        <!-- Código de áudio com autoplay -->
+        <audio id="audioPlayer" autoplay>
+          <source src="Morgan Wallen - Spin You Around (124) (Lyric Video).mp3" type="audio/mp3">
+          <source src="Morgan Wallen - Spin You Around (124) (Lyric Video).mp3" type="audio/ogg">
+        </audio>
+    </div>
+
+    <script>
+        // Ajustando o volume para 10% (0.1) - volume mais baixo
+        document.getElementById('audioPlayer').volume = 0.1;
+    </script>
+
+    </script>
+
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+
+</html>
